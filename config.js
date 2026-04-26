@@ -19,5 +19,5 @@ const PIZZA_CONFIG = {
   placeName: "Que Pizzas!!",
 
   // Optional https:// URL to a logo image. Leave "" for no logo.
-  logoURL: "",
+  logoURL: "https://pochoramirez.github.io/PizzasQR/web.png",
 };
