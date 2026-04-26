@@ -6,7 +6,7 @@ export function renderGallery(files, containerEl) {
   for (const file of files) {
     const figure = document.createElement('figure');
     const img = document.createElement('img');
-    img.src = `https://drive.google.com/uc?export=view&id=${file.id}`;
+    img.src = `https://lh3.googleusercontent.com/d/${file.id}`;
     img.setAttribute('loading', 'lazy');
     img.setAttribute('alt', file.name);
     img.onerror = () => { figure.hidden = true; };
