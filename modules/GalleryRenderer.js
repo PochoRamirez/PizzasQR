@@ -1,12 +1,12 @@
 // Feature: pizza-menu-qr
 // GalleryRenderer — DOM rendering helpers for the pizza menu gallery.
 
-export function renderGallery(files, containerEl) {
+export function renderGallery(files, containerEl, apiKey) {
   containerEl.innerHTML = '';
   for (const file of files) {
     const figure = document.createElement('figure');
     const img = document.createElement('img');
-    img.src = `https://drive.google.com/uc?export=view&id=${file.id}`;
+    img.src = `https://www.googleapis.com/drive/v3/files/${file.id}?alt=media&key=${apiKey}`;
     img.setAttribute('loading', 'lazy');
     img.setAttribute('alt', file.name);
     img.onerror = () => { figure.hidden = true; };

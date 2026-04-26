@@ -26,7 +26,7 @@ async function loadMenu() {
     if (sorted.length === 0) {
       showEmptyState();
     } else {
-      renderGallery(sorted, galleryEl);
+      renderGallery(sorted, galleryEl, PIZZA_CONFIG.apiKey);
     }
   } catch (err) {
     showError(MSG_LOAD_ERROR);
