@@ -1,0 +1,4 @@
+qrcode[pil]
+Pillow
+hypothesis
+zxing-cpp

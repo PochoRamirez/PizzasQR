@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+
+# Generated QR code images
+qr*.png
+
+# Test / coverage artifacts
+.pytest_cache/
+.hypothesis/
+coverage/
+*.lcov
+
+# Vitest
+.vitest-cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

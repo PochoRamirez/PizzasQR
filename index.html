@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 script-src 'self';
+                 style-src 'self' https://fonts.googleapis.com;
+                 img-src 'self' https://drive.google.com https://lh3.googleusercontent.com data:;
+                 connect-src 'self' https://www.googleapis.com https://drive.google.com;
+                 font-src 'self' https://fonts.gstatic.com;
+                 object-src 'none';
+                 base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pizzeria Bella Napoli — scan to view our pizza menu">
+  <title>Pizzeria Bella Napoli — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="branded-header"></header>
+
+  <main>
+    <div id="loading-spinner" aria-live="polite" aria-label="Loading menu" hidden>
+      <span class="spinner"></span>
+    </div>
+    <div id="error-banner" role="alert" hidden></div>
+    <p id="empty-state" hidden>The menu is currently unavailable.</p>
+    <section id="gallery" aria-label="Pizza menu"></section>
+    <button id="refresh-btn" aria-label="Refresh menu">&#8635;</button>
+  </main>
+
+  <!-- config.js is a plain script so PIZZA_CONFIG becomes a global variable -->
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
