@@ -85,8 +85,7 @@ figure {
 
 figure img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -123,6 +122,8 @@ figure img {
   align-items: center;
   padding: 3rem 0;
 }
+
+#loading-spinner[hidden] { display: none; }
 
 .spinner {
   width: 40px;
