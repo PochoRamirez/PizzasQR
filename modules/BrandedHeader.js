@@ -36,7 +36,7 @@ export function renderBrandedHeader(config) {
     const img = document.createElement('img');
     img.src = cfg.logoURL;
     img.alt = placeName;
-    img.style.maxHeight = '48px';
+    img.style.maxHeight = '120px';
     header.appendChild(img);
   }
 
