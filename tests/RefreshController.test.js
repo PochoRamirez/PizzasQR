@@ -200,7 +200,7 @@ describe('RefreshController — Property 8: Refresh failure restores gallery', (
             (fig) => fig.querySelector('img').src
           );
           for (const file of initialFiles) {
-            const expectedSrc = `https://drive.google.com/uc?export=view&id=${file.id}`;
+            const expectedSrc = `https://www.googleapis.com/drive/v3/files/${file.id}?alt=media&key=undefined`;
             if (!srcsAfter.includes(expectedSrc)) return false;
           }
 

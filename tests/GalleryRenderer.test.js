@@ -41,7 +41,7 @@ describe('renderGallery', () => {
     imgs.forEach((img, i) => {
       expect(img.getAttribute('loading')).toBe('lazy');
       expect(img.src).toBe(
-        `https://drive.google.com/uc?export=view&id=${files[i].id}`
+        `https://www.googleapis.com/drive/v3/files/${files[i].id}?alt=media&key=undefined`
       );
     });
   });

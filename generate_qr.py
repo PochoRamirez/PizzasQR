@@ -45,7 +45,7 @@ def generate_qr(url, logo_path, output_path):
             sys.exit(1)
 
         qr_w, qr_h = qr_image.size
-        max_logo_area = qr_w * qr_h * 0.30
+        max_logo_area = qr_w * qr_h * 0.15
         logo_w, logo_h = logo.size
         if logo_w * logo_h > max_logo_area:
             scale = (max_logo_area / (logo_w * logo_h)) ** 0.5
